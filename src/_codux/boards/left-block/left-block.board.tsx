@@ -3,5 +3,11 @@ import { LeftBlock } from '../../../components/left-block/left-block';
 
 export default createBoard({
     name: 'LeftBlock',
-    Board: () => <LeftBlock />
+    Board: () => <LeftBlock />,
+    environmentProps: {
+        windowWidth: 810,
+        windowHeight: 388,
+        canvasWidth: 294,
+        canvasHeight: 84,
+    },
 });

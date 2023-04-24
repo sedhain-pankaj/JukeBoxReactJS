@@ -1,17 +1,18 @@
-import { useState } from 'react';
 import styles from './App.module.scss';
+import { LeftBlock } from './components/left-block/left-block';
+import { VideoBlock } from './components/video-block/video-block';
+import { ContentBlock } from './components/content-block/content-block';
+import { FooterBlock } from './components/footer-block/footer-block';
+import { RightBlock } from './components/right-block/right-block';
 
 function App() {
-
     return (
-        <div className={styles.App}>
-            <div>
-                <a href="https://vitejs.dev" target="_blank"></a>
-                <a href="https://reactjs.org" target="_blank"></a>
-                <a href="https://www.typescriptlang.org/" target="_blank"></a>
-                <a href="https://sass-lang.com/" target="_blank"></a>
-            </div>
-            <p className={styles['read-the-docs']}></p>
+        <div className={styles.mainroot}>
+            <div className={styles.leftblock}> <LeftBlock /> </div>
+            <div className={styles.videoblock}> <VideoBlock /> </div>
+            <div className={styles.contentblock}> <ContentBlock /> </div>
+            <div className={styles.footerblock}> <FooterBlock /> </div>
+            <div className={styles.rightblock}> <RightBlock /> </div>
         </div>
     );
 }
