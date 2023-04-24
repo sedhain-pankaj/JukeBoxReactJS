@@ -1,3 +1,35 @@
-.root {
-  display: inline;
+.randomizer_block {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 90%;
+}
+
+.category_button {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 0px;
+  top: 10%;
+  right: 0px;
+  bottom: 15%;
+}
+
+.volume_block {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 0px;
+  top: 85%;
+  right: 0px;
+  bottom: 0px;
 }

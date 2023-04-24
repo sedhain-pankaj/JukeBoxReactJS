@@ -1,2 +1,37 @@
-.root {
+.title {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 0px;
+  top: 0px;
+  right: 15%;
+  bottom: 85%;
 }
+
+.skip_button {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 85%;
+  top: 0px;
+  right: 0px;
+  bottom: 85%;
+}
+
+.video_block {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 0px;
+  top: 15%;
+  right: 0px;
+  bottom: 0px;
+}
+
+

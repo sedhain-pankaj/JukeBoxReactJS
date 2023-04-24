@@ -3,5 +3,9 @@ import { VideoBlock } from '../../../components/video-block/video-block';
 
 export default createBoard({
     name: 'VideoBlock',
-    Board: () => <VideoBlock />
+    Board: () => <VideoBlock />,
+    environmentProps: {
+        canvasWidth: 636,
+        canvasHeight: 479,
+    },
 });
