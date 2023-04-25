@@ -1,4 +1,5 @@
 import styles from './video-block.module.scss';
+import Classnames from 'classnames';
 
 /**
  * This component was created using Codux's Default new component template.
@@ -9,7 +10,7 @@ export const VideoBlock = ({}) => {
         <div>
             <div className={styles.title}>title</div>
             <div className={styles.skip_button}>
-                <button>Skip</button>
+                <button className={styles.skip_button_container}>Skip</button>
             </div>
             <div className={styles.video_block}>video</div>
         </div>
