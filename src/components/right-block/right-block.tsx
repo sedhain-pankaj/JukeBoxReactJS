@@ -14,9 +14,13 @@ export const RightBlock = ({}) => {
 
             <div className={styles.queue_block}>
                 <div className={styles.queue_header}>Queue &#8803;</div>
-                <div className={styles.clear_queue_button}>Clear Queue </div>
+
+                <div className={styles.clear_queue_button}>
+                    <button className={styles.button_right}>Clear Queue</button>
+                </div>
 
                 <div className={styles.queue_list}>Queued List</div>
+
                 <div className={styles.arrows_queue_list}>Arrow</div>
             </div>
         </div>
