@@ -6,7 +6,7 @@ import styles from './left-block.module.scss';
  * To create custom component templates, see https://help.codux.com/kb/en/article/configuration-for-left-blocks-and-templates
  */
 
-const buttons = [
+const category_buttons: string[] = [
     "50's and 60's",
     "70's",
     "80's",
@@ -17,33 +17,33 @@ const buttons = [
     'Karaoke',
     'Special Occasion',
     'Christmas Song',
-    'YouTube Search',
 ];
 
 export const LeftBlock = ({}) => {
     return (
         <div>
             <div className={styles.randomizer_block}>
-                <span>Randomizer:</span>
+                <span style={{ fontWeight: 'bold' }}>Shuffle:</span>
                 <br />
-                <button className={styles['button-left']}>&#9776; Randomizer</button>
+                <button className={styles['button-randomizer']}>&#9776; Randomizer</button>
             </div>
 
             <div className={styles.category_button}>
-                <span>Categories:</span>
+                <span style={{ fontWeight: 'bold' }}>Categories:</span>
                 <br />
                 <div>
-                    {buttons.map((button) => (
-                        <>
-                            <button className={styles['button-left']}>{button}</button>
+                    {category_buttons.map((button_name, index) => (
+                        <Fragment key={index}>
+                            <button className={styles['button-left']}>{button_name}</button>
                             <br />
-                        </>
+                        </Fragment>
                     ))}
+                    <button className={styles['button-yt']}> YouTube Search</button>
                 </div>
             </div>
 
             <div className={styles.volume_block}>
-                <span>Volume:</span>
+                <span style={{ fontWeight: 'bold' }}>Volume:</span>
             </div>
         </div>
     );
