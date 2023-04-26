@@ -1,3 +1,4 @@
+// right block is split into 2 main search and queue section
 .search_block {
   position: absolute;
   margin: 0.5%;
@@ -9,55 +10,6 @@
   right: 0px;
   bottom: 85%;
 }
-
-.search_header {
-  position: absolute;
-  margin: 0.5%;
-  padding: 10px;
-  border-style: solid;
-  border-color: #0f9171;
-  bottom: 55%;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-}
-
-.search_bar {
-  position: absolute;
-  margin: 0.5%;
-  padding: 10px;
-  border-style: solid;
-  border-color: #0f9171;
-  bottom: 0px;
-  left: 0px;
-  top: 45%;
-  right: 0px;
-}
-
-.queue_header {
-  position: absolute;
-  margin: 0.5%;
-  padding: 10px;
-  border-style: solid;
-  border-color: #0f9171;
-  bottom: 92%;
-  left: 0px;
-  top: 0px;
-  right: 60%;
-}
-
-.clear_queue_button {
-  position: absolute;
-  margin: 0.5%;
-  padding: 10px;
-  border-style: solid;
-  border-color: #0f9171;
-  left: 40%;
-  top: 0px;
-  right: 0px;
-  bottom: 92%;
-}
-
 .queue_block {
   position: absolute;
   margin: 0.5%;
@@ -70,6 +22,56 @@
   right: 0px;
 }
 
+// search is split into header and search-bar
+.search_header {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  bottom: 55%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+.search_bar {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  bottom: 0px;
+  left: 0px;
+  top: 45%;
+  right: 0px;
+}
+
+// queue block split again in 2 halves
+//top half is split into header and clear-queue-button
+.queue_header {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  bottom: 92%;
+  left: 0px;
+  top: 0px;
+  right: 60%;
+}
+.clear_queue_button {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 40%;
+  top: 0px;
+  right: 0px;
+  bottom: 92%;
+}
+
+//bottom half is split into queue-list and arrows
 .queue_list {
   position: absolute;
   margin: 0.5%;
@@ -81,7 +83,6 @@
   right: 15%;
   bottom: 0px;
 }
-
 .arrows_queue_list {
   position: absolute;
   margin: 0.5%;
@@ -92,4 +93,32 @@
   left: 85%;
   top: 8%;
   right: 0px;
+}
+
+// clear queue button css: regular, hover & active
+.button_right {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0.5px solid #315f53;
+  border-radius: 1rem;
+  background-color: #c0a8a8;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+}
+.button_right:hover {
+  background-color: #7e0000;
+  color: #fff;
+  box-shadow: 3px 3px 10px #d3cccc;
+  transform: translateX(-1px);
+  font-weight: bolder;
+}
+.button_right:active {
+  transform: translateX(1px);
+  box-shadow: 0px 0px 0px #d3cccc;
 }

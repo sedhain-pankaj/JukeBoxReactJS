@@ -1,23 +1,23 @@
-.category_block{
-    position: absolute;
-    margin: 0.5%;
-    padding: 10px;
-    border-style: solid;
-    border-color: #0f9171;
-    left: 0px;
-    top: 0px;
-    right: 10%;
-    bottom: 0px;
+//content block is split into 2 sections - content & arrows
+.category_block {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  left: 0px;
+  top: 0px;
+  right: 10%;
+  bottom: 0px;
 }
-
-.arrows_category_block{
-    position: absolute;
-    margin: 0.5%;
-    padding: 10px;
-    border-style: solid;
-    border-color: #0f9171;
-    bottom: 0px;
-    left: 90%;
-    top: 0px;
-    right: 0px;
+.arrows_category_block {
+  position: absolute;
+  margin: 0.5%;
+  padding: 10px;
+  border-style: solid;
+  border-color: #0f9171;
+  bottom: 0px;
+  left: 90%;
+  top: 0px;
+  right: 0px;
 }

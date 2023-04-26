@@ -1,8 +1,11 @@
+// same to <body> 
 .mainroot {
   width: 100%;
   height: 100vh;
 }
 
+//whole mainroot is split into 3 sections - left, middle & right
+// middle is split into 3 sections - video, content & footer
 .leftblock {
   position: absolute;
   margin: 0.5%;
