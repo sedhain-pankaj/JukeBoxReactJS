@@ -1,4 +1,4 @@
-.title {
+.title_container {
   position: absolute;
   margin: 0.5%;
   padding: 10px;
@@ -8,9 +8,13 @@
   top: 0px;
   right: 15%;
   bottom: 85%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.skip_button {
+.skip_button_container {
   position: absolute;
   margin: 0.5%;
   padding: 10px;
@@ -34,7 +38,7 @@
   bottom: 0px;
 }
 
-.skip_button_container {
+.skip_button {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -42,7 +46,28 @@
   bottom: 0px;
   border-radius: 0.5rem;
   cursor: pointer;
-  background-color: #d5d5d5;
+  background-color: #cecbcb;
   border: none;
   font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.skip_button:hover {
+  background-color: #0f9171;
+  color: #fff;
+  box-shadow: 3px 3px 10px #d3cccc;
+  transform: translateX(-1px);
+  font-weight: bolder;
+}
+
+.skip_button:active {
+  transform: translateX(1px);
+  box-shadow: 0px 0px 0px #d3cccc;
+}
+
+.video_title {
+  font-size: 1rem;
+  font-weight: bold;
 }
