@@ -8,12 +8,16 @@ export const RightBlock = ({}) => {
     return (
         <div>
             <div className={styles.search_block}>
-                <div className={styles.search_header}>Search &#128269;</div>
+                <div className={styles.search_header}>
+                    <div className={styles.searchqueue_header_text}>Search &#128269;</div>
+                    </div>
                 <div className={styles.search_bar}>Search Bar</div>
             </div>
 
             <div className={styles.queue_block}>
-                <div className={styles.queue_header}>Queue &#8803;</div>
+                <div className={styles.queue_header}>
+                    <div className={styles.searchqueue_header_text}>Queue &#8803;</div>
+                </div>
 
                 <div className={styles.clear_queue_button}>
                     <button className={styles.button_right}>Clear Queue</button>

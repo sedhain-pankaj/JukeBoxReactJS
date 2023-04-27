@@ -30,6 +30,8 @@
   left: 0px;
   top: 0px;
   right: 0px;
+  display: grid;
+  place-items: center;
 }
 .search_bar {
   position: absolute;
@@ -53,6 +55,8 @@
   left: 0px;
   top: 0px;
   right: 60%;
+  display: grid;
+  place-items: center;
 }
 .clear_queue_button {
   position: absolute;
@@ -114,4 +118,14 @@
 .button_right:active {
   transform: translateX(1px);
   box-shadow: 0px 0px 0px #d3cccc;
+}
+
+//text css for search and queue header
+.searchqueue_header_text{
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
