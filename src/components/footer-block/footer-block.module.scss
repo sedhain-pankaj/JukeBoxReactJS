@@ -1,0 +1,23 @@
+.footer_text {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(0, 77, 49);
+  animation: animate 7s infinite linear;
+  width: 100%;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
