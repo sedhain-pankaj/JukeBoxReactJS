@@ -1,8 +1,7 @@
 //video block has 3 sections - title, skip-button & video
 .title_container {
   position: absolute;
-  margin: 0.5%;
-  padding: 10px;
+  margin: 0.5%; //needs to go in final version
   border-style: solid;
   border-color: #0f9171;
   left: 0px;
@@ -16,8 +15,7 @@
 }
 .skip_button_container {
   position: absolute;
-  margin: 0.5%;
-  padding: 10px;
+  margin: 0.5%; //stays in final version
   border-style: solid;
   border-color: #0f9171;
   left: 85%;
@@ -27,8 +25,7 @@
 }
 .video_block {
   position: absolute;
-  margin: 0.5%;
-  padding: 10px;
+  margin: 0.5%; //needs to go in final version
   border-style: solid;
   border-color: #0f9171;
   left: 0px;
