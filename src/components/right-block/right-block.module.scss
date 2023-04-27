@@ -16,7 +16,7 @@
   border-color: #0f9171;
   bottom: 0px;
   left: 0px;
-  top: 15%;
+  top: 16%;
   right: 0px;
 }
 
@@ -37,7 +37,8 @@
   position: absolute;
   margin: 0.5%;
   border-style: solid;
-  border-color: #0f9171;
+  border-color: #015433;
+  border-radius: 0.8rem;
   bottom: 0px;
   left: 0px;
   top: 45%;
@@ -75,7 +76,8 @@
   position: absolute;
   margin: 0.5%;
   border-style: solid;
-  border-color: #0f9171;
+  border-color: #015433;
+  border-radius: 0.8rem;
   left: 0px;
   top: 8%;
   right: 15%;
@@ -121,11 +123,15 @@
 }
 
 //text css for search and queue header
-.searchqueue_header_text{
+.search_header_text,
+.queue_header_text {
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   overflow: hidden;
+}
+.search_header_text {
+  text-align: center;
 }
