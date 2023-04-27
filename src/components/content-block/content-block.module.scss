@@ -2,7 +2,6 @@
 .category_block {
   position: absolute;
   margin: 0.5%;
-  padding: 10px;
   border-style: solid;
   border-color: #0f9171;
   left: 0px;
@@ -13,11 +12,56 @@
 .arrows_category_block {
   position: absolute;
   margin: 0.5%;
-  padding: 10px;
   border-style: solid;
   border-color: #0f9171;
   bottom: 0px;
   left: 90%;
   top: 0px;
   right: 0px;
+}
+
+//h3 mostly for prompt message in content block
+h3 {
+  font-family: Verdana;
+  font-size: 1.2rem;
+  color: #7e0000;
+  text-align: center;
+}
+
+// arrows button css - regular, hover and active
+.arrow_up,
+.arrow_down {
+  background-color: #4100f4;
+  border: 0.5px solid #315f53;
+  border-radius: 1rem;
+  color: white;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.arrow_up {
+  top: 0px;
+  bottom: 85%;
+}
+.arrow_down {
+  top: 85%;
+  bottom: 0px;
+}
+
+.arrow_up:hover,
+.arrow_down:hover {
+  background-color: #0f9171;
+  box-shadow: 3px 3px 10px #d3cccc;
+  transform: translateX(-1px);
+}
+
+.arrow_up:active,
+.arrow_down:active {
+  background-color: #0f9171;
+  transform: translateX(1px);
+  box-shadow: 0px 0px 0px #d3cccc;
 }
