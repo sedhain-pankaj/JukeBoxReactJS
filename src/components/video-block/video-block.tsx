@@ -15,7 +15,7 @@ export const VideoBlock = ({}) => {
                 <button className={styles.skip_button}>Skip</button>
             </div>
 
-            <div className={styles.video_block}>video</div>
+            <div className={styles.video_block}></div>
         </div>
     );
 };

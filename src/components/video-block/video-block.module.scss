@@ -1,21 +1,19 @@
 //video block has 3 sections - title, skip-button & video
 .title_container {
   position: absolute;
-  margin: 0.5%; //needs to go in final version
+  margin: 0.5%;
   border-style: solid;
   border-color: #0f9171;
   left: 0px;
   top: 0px;
   right: 15%;
   bottom: 85%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: grid;
+  place-items: center;
 }
 .skip_button_container {
   position: absolute;
-  margin: 0.5%; //stays in final version
+  margin: 0.5%;
   border-style: solid;
   border-color: #0f9171;
   left: 85%;
@@ -25,20 +23,26 @@
 }
 .video_block {
   position: absolute;
-  margin: 0.5%; //needs to go in final version
+  margin: 0.5%;
   border-style: solid;
   border-color: #0f9171;
   left: 0px;
   top: 15%;
   right: 0px;
   bottom: 0px;
+  background-color: #312727;
 }
 
 //css for video title. 
 //most of its css is in title_container
 .video_title {
+  width: 100%;
   font-size: 1rem;
   font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 //css for skip button - regular, hover & active
