@@ -3,7 +3,8 @@
   position: absolute;
   margin: 0.5%;
   border-style: solid;
-  border-color: #0f9171;
+  border-color: #015433;
+  border-radius: 0.8rem;
   left: 0px;
   top: 0px;
   right: 10%;
@@ -11,9 +12,6 @@
 }
 .arrows_category_block {
   position: absolute;
-  margin: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
   bottom: 0px;
   left: 90%;
   top: 0px;
@@ -29,8 +27,8 @@ h3 {
 }
 
 // arrows button css - regular, hover and active
-.arrow_up,
-.arrow_down {
+.arrow_up_category,
+.arrow_down_category {
   background-color: #4100f4;
   border: 0.5px solid #315f53;
   border-radius: 1rem;
@@ -43,24 +41,24 @@ h3 {
   place-items: center;
   overflow: hidden;
 }
-.arrow_up {
+.arrow_up_category {
   top: 0px;
   bottom: 85%;
 }
-.arrow_down {
+.arrow_down_category {
   top: 85%;
   bottom: 0px;
 }
 
-.arrow_up:hover,
-.arrow_down:hover {
+.arrow_up_category:hover,
+.arrow_down_category:hover {
   background-color: #0f9171;
   box-shadow: 3px 3px 10px #d3cccc;
   transform: translateX(-1px);
 }
 
-.arrow_up:active,
-.arrow_down:active {
+.arrow_up_category:active,
+.arrow_down_category:active {
   background-color: #0f9171;
   transform: translateX(1px);
   box-shadow: 0px 0px 0px #d3cccc;

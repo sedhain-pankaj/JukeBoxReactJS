@@ -2,8 +2,6 @@
 .search_block {
   position: absolute;
   margin: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
   left: 0px;
   top: 0px;
   right: 0px;
@@ -12,8 +10,6 @@
 .queue_block {
   position: absolute;
   margin: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
   bottom: 0px;
   left: 0px;
   top: 16%;
@@ -23,9 +19,6 @@
 // search is split into header and search-bar
 .search_header {
   position: absolute;
-  margin: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
   bottom: 55%;
   left: 0px;
   top: 0px;
@@ -35,7 +28,6 @@
 }
 .search_bar {
   position: absolute;
-  margin: 0.5%;
   border-style: solid;
   border-color: #015433;
   border-radius: 0.8rem;
@@ -49,9 +41,6 @@
 //top half is split into header and clear-queue-button
 .queue_header {
   position: absolute;
-  margin: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
   bottom: 92%;
   left: 0px;
   top: 0px;
@@ -62,9 +51,6 @@
 .clear_queue_button {
   position: absolute;
   margin: 0.5%;
-  padding: 10px;
-  border-style: solid;
-  border-color: #0f9171;
   left: 40%;
   top: 0px;
   right: 0px;
@@ -80,16 +66,14 @@
   border-radius: 0.8rem;
   left: 0px;
   top: 8%;
-  right: 15%;
+  right: 14%;
   bottom: 0px;
 }
 .arrows_queue_list {
   position: absolute;
   margin: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
   bottom: 0px;
-  left: 85%;
+  left: 86%;
   top: 8%;
   right: 0px;
 }
@@ -134,4 +118,43 @@
 }
 .search_header_text {
   text-align: center;
+}
+
+//arrow css for queue list copied over from category block
+// arrows button css - regular, hover and active
+.arrow_up_queue,
+.arrow_down_queue {
+  background-color: #4100f4;
+  border: 0.5px solid #315f53;
+  border-radius: 1rem;
+  color: white;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.arrow_up_queue {
+  top: 0px;
+  bottom: 90%;
+}
+.arrow_down_queue {
+  top: 90%;
+  bottom: 0px;
+}
+
+.arrow_up_queue:hover,
+.arrow_down_queue:hover {
+  background-color: #0f9171;
+  box-shadow: 3px 3px 10px #d3cccc;
+  transform: translateX(-1px);
+}
+
+.arrow_up_queue:active,
+.arrow_down_queue:active {
+  background-color: #0f9171;
+  transform: translateX(1px);
+  box-shadow: 0px 0px 0px #d3cccc;
 }

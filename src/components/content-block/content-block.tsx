@@ -18,7 +18,7 @@ export const ContentBlock = ({}) => {
             </div>
 
             <div className={styles.arrows_category_block}>
-                <button className={styles.arrow_up}>
+                <button className={styles.arrow_up_category}>
                     <i
                         className="material-icons-outlined"
                         style={{ fontSize: '3rem', position: 'absolute' }}
@@ -27,7 +27,7 @@ export const ContentBlock = ({}) => {
                     </i>
                 </button>
 
-                <button className={styles.arrow_down}>
+                <button className={styles.arrow_down_category}>
                     <i
                         className="material-icons-outlined"
                         style={{ fontSize: '3rem', position: 'absolute' }}
