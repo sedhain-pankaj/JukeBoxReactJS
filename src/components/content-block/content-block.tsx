@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import styles from './content-block.module.scss';
 import 'material-icons/iconfont/outlined.css';
 
