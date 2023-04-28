@@ -2,9 +2,6 @@
 .category_block {
   position: absolute;
   margin: 0.5%;
-  border-style: solid;
-  border-color: #015433;
-  border-radius: 0.8rem;
   left: 0px;
   top: 0px;
   right: 10%;
@@ -12,6 +9,7 @@
 }
 .arrows_category_block {
   position: absolute;
+  margin: 0.5%; 
   bottom: 0px;
   left: 90%;
   top: 0px;
