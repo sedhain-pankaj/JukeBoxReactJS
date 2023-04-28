@@ -12,7 +12,15 @@ export const VideoBlock = ({}) => {
             </div>
 
             <div className={styles.skip_button_container}>
-                <button className={styles.skip_button}>Skip</button>
+                <button className={styles.skip_button}>
+                    Skip
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: '2.2rem', verticalAlign: 'middle' }}
+                    >
+                        skip_next
+                    </i>
+                </button>
             </div>
 
             <div className={styles.video_block}></div>

@@ -9,18 +9,42 @@ export const RightBlock = ({}) => {
         <div>
             <div className={styles.search_block}>
                 <div className={styles.search_header}>
-                    <div className={styles.search_header_text}>Search &#128269;</div>
+                    <div className={styles.search_header_text}>
+                        Search &nbsp;
+                        <i
+                            className="material-icons-outlined"
+                            style={{ fontSize: '2.75rem', verticalAlign: 'middle' }}
+                        >
+                            content_paste_search
+                        </i>
+                    </div>
                 </div>
                 <div className={styles.search_bar}></div>
             </div>
 
             <div className={styles.queue_block}>
                 <div className={styles.queue_header}>
-                    <div className={styles.queue_header_text}>Queue &#8803;</div>
+                    <div className={styles.queue_header_text}>
+                        Queue
+                        <i
+                            className="material-icons-outlined"
+                            style={{ fontSize: '3rem', verticalAlign: 'middle' }}
+                        >
+                            playlist_play
+                        </i>
+                    </div>
                 </div>
 
                 <div className={styles.clear_queue_button}>
-                    <button className={styles.button_right}>Clear Queue</button>
+                    <button className={styles.button_right}>
+                        Clear Queue &nbsp;
+                        <i
+                            className="material-icons-outlined"
+                            style={{ fontSize: '2.5rem', verticalAlign: 'middle' }}
+                        >
+                            delete_sweep
+                        </i>
+                    </button>
                 </div>
 
                 <div className={styles.queue_list}></div>

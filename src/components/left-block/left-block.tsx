@@ -25,7 +25,21 @@ export const LeftBlock = ({}) => {
             <div className={styles.randomizer_block}>
                 <span style={{ fontWeight: 'bold' }}>Shuffle:</span>
                 <br />
-                <button className={styles['button-randomizer']}>&#9776; Randomizer</button>
+                <button className={styles['button-randomizer']}>
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: '2rem', verticalAlign: 'middle' }}
+                    >
+                        menu
+                    </i>
+                    &nbsp; &nbsp; Randomizer
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: '2rem', verticalAlign: 'middle' }}
+                    >
+                        sync
+                    </i>
+                </button>
             </div>
 
             <div className={styles.category_button}>
