@@ -7,7 +7,7 @@ import { RightBlock } from './components/right-block/right-block';
 
 function App() {
     return (
-        <div className={styles.mainroot}>
+        <div>
             <div className={styles.leftblock}> <LeftBlock /> </div>
             <div className={styles.videoblock}> <VideoBlock /> </div>
             <div className={styles.contentblock}> <ContentBlock /> </div>
