@@ -1,5 +1,4 @@
 import styles from './content-block.module.scss';
-import 'material-icons/iconfont/outlined.css';
 
 /**
  * This component was created using Codux's Default new component template.

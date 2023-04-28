@@ -4,6 +4,7 @@ import { VideoBlock } from './components/video-block/video-block';
 import { ContentBlock } from './components/content-block/content-block';
 import { FooterBlock } from './components/footer-block/footer-block';
 import { RightBlock } from './components/right-block/right-block';
+import 'material-icons/iconfont/outlined.css';
 
 function App() {
     return (
