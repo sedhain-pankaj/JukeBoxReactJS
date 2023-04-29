@@ -47,6 +47,7 @@
   right: 60%;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 .clear_queue_button {
   position: absolute;
@@ -83,16 +84,20 @@
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
+  color: #7e0000;
   border: 0.5px solid #315f53;
   border-radius: 1rem;
-  background-color: #c0a8a8;
+  background-color: #a8a4a4;
   position: absolute;
   bottom: 0px;
   left: 0px;
   top: 0px;
   right: 0px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .button_right:hover {
   background-color: #7e0000;
