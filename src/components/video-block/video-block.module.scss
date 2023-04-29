@@ -4,7 +4,7 @@
   margin: 0.5%;
   left: 0px;
   top: 0px;
-  right: 15%;
+  right: 13%;
   bottom: 87%;
   display: grid;
   place-items: center;
@@ -12,7 +12,7 @@
 .skip_button_container {
   position: absolute;
   margin: 0.5%;
-  left: 85%;
+  left: 87%;
   top: 0px;
   right: 0px;
   bottom: 87%;
@@ -27,7 +27,7 @@
   background-color: #312727;
 }
 
-//css for video title. 
+//css for video title.
 //most of its css is in title_container
 .video_title {
   width: 100%;
@@ -52,7 +52,9 @@
   border: none;
   font-size: 1rem;
   font-weight: bold;
-  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .skip_button:hover {
