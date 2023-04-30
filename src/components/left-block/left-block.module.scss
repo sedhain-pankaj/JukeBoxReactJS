@@ -6,8 +6,8 @@
   top: 0px;
   right: 0px;
   bottom: 15%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .volume_block {
   position: absolute;
@@ -24,20 +24,15 @@
 .button-left,
 .button-randomizer,
 .button-yt {
-  margin-bottom: 5px;
+  margin-bottom: 0.2rem;
   cursor: pointer;
-  font-size: 1.5rem;
-  font-weight: bold;
-  border: 0.5px solid #315f53;
+  font-weight: bolder;
+  border: 1px solid #315f53;
   border-radius: 1rem;
   background-color: #aca9a9;
-  width: 100%;
-  height: 2.5rem;
+  height: 100%;
   white-space: nowrap;
   overflow: hidden;
-}
-.button-randomizer {
-  margin-bottom: 0px;
 }
 
 // category button's css - hover

@@ -23,6 +23,7 @@ export const LeftBlock = ({}) => {
     return (
         <div>
             <div className={styles.category_button}>
+                {/* Shuffle heading and button */}
                 <span
                     style={{
                         fontWeight: 'bold',
@@ -48,8 +49,8 @@ export const LeftBlock = ({}) => {
                     </i>
                 </button>
                 <br />
-                <br />
 
+                {/* Category heading and buttons */}
                 <span
                     style={{
                         fontWeight: 'bold',
@@ -59,15 +60,15 @@ export const LeftBlock = ({}) => {
                 >
                     Categories:
                 </span>
-                <div>
-                    {category_buttons.map((button_name, index) => (
-                        <Fragment key={index}>
-                            <button className={styles['button-left']}>{button_name}</button>
-                        </Fragment>
-                    ))}
-                </div>
+
+                {category_buttons.map((button_name, index) => (
+                    <Fragment key={index}>
+                        <button className={styles['button-left']}>{button_name}</button>
+                    </Fragment>
+                ))}
                 <br />
 
+                {/* YouTube heading and button */}
                 <span
                     style={{
                         fontWeight: 'bold',
@@ -80,6 +81,7 @@ export const LeftBlock = ({}) => {
                 <button className={styles['button-yt']}> YouTube Search</button>
             </div>
 
+            {/* Volume heading and buttons */}
             <div className={styles.volume_block}>
                 <span style={{ fontWeight: 'bold' }}>Volume:</span>
             </div>
