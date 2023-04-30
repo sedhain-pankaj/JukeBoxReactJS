@@ -45,8 +45,8 @@
   left: 0px;
   top: 0px;
   right: 60%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 .clear_queue_button {
@@ -114,15 +114,18 @@
 //text css for search and queue header
 .search_header_text,
 .queue_header_text {
-  width: 100%;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: left;
-  white-space: nowrap;
+  font-size: x-large;
+  font-weight: bolder;
+  height: 100%;
   overflow: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  justify-content: start;
+  align-items: center;
 }
 .search_header_text {
-  text-align: center;
+  justify-content: center;
 }
 
 //arrow css for queue list copied over from category block
