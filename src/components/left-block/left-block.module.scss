@@ -8,6 +8,7 @@
   bottom: 15%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .volume_block {
   position: absolute;
@@ -20,20 +21,33 @@
   bottom: 0px;
 }
 
+//header in span
+.span-heading {
+  font-weight: bold;
+  display: flex;
+  place-content: center;
+  color: #033e30;
+}
+
 // category button's css - regular
 .button-left,
 .button-randomizer,
 .button-yt {
   margin-bottom: 0.2rem;
   cursor: pointer;
-  font-size: x-large;
   font-weight: bolder;
   border: 1px solid #315f53;
   border-radius: 1rem;
   background-color: rgba(172, 169, 169, 0.8);
-  height: 100%;
   white-space: nowrap;
   overflow: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+  font-size: large;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 // category button's css - hover
