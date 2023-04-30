@@ -5,7 +5,9 @@ export default createBoard({
     name: 'VideoBlock',
     Board: () => <VideoBlock />,
     environmentProps: {
-        canvasWidth: 636,
-        canvasHeight: 479,
+        canvasWidth: 994,
+        canvasHeight: 747,
+        windowHeight: 876,
+        windowWidth: 1184,
     },
 });

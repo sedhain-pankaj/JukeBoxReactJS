@@ -5,9 +5,9 @@ export default createBoard({
     name: 'LeftBlock',
     Board: () => <LeftBlock />,
     environmentProps: {
-        windowWidth: 810,
-        windowHeight: 388,
-        canvasWidth: 570,
-        canvasHeight: 281,
+        windowWidth: 380,
+        windowHeight: 604,
+        canvasWidth: 842,
+        canvasHeight: 601,
     },
 });

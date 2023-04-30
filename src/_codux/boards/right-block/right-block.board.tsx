@@ -5,7 +5,9 @@ export default createBoard({
     name: 'RightBlock',
     Board: () => <RightBlock />,
     environmentProps: {
-        canvasWidth: 1107,
-        canvasHeight: 606,
+        canvasWidth: 528,
+        canvasHeight: 750,
+        windowHeight: 772,
+        windowWidth: 726,
     },
 });
