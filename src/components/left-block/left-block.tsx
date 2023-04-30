@@ -22,9 +22,16 @@ const category_buttons: string[] = [
 export const LeftBlock = ({}) => {
     return (
         <div>
-            <div className={styles.randomizer_block}>
-                <span style={{ fontWeight: 'bold' }}>Shuffle:</span>
-                <br />
+            <div className={styles.category_button}>
+                <span
+                    style={{
+                        fontWeight: 'bold',
+                        display: 'flex',
+                        placeContent: 'center',
+                    }}
+                >
+                    Shuffle:
+                </span>
                 <button className={styles['button-randomizer']}>
                     <i
                         className="material-icons-outlined"
@@ -40,20 +47,37 @@ export const LeftBlock = ({}) => {
                         sync
                     </i>
                 </button>
-            </div>
-
-            <div className={styles.category_button}>
-                <span style={{ fontWeight: 'bold' }}>Categories:</span>
                 <br />
+                <br />
+
+                <span
+                    style={{
+                        fontWeight: 'bold',
+                        display: 'flex',
+                        placeContent: 'center',
+                    }}
+                >
+                    Categories:
+                </span>
                 <div>
                     {category_buttons.map((button_name, index) => (
                         <Fragment key={index}>
                             <button className={styles['button-left']}>{button_name}</button>
-                            <br />
                         </Fragment>
                     ))}
-                    <button className={styles['button-yt']}> YouTube Search</button>
                 </div>
+                <br />
+
+                <span
+                    style={{
+                        fontWeight: 'bold',
+                        display: 'flex',
+                        placeContent: 'center',
+                    }}
+                >
+                    YouTube:
+                </span>
+                <button className={styles['button-yt']}> YouTube Search</button>
             </div>
 
             <div className={styles.volume_block}>
