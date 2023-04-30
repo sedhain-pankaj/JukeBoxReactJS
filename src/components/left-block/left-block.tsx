@@ -24,43 +24,16 @@ export const LeftBlock = ({}) => {
         <div>
             <div className={styles.category_button}>
                 {/* Shuffle heading and button */}
-                <span
-                    style={{
-                        fontWeight: 'bold',
-                        display: 'flex',
-                        placeContent: 'center',
-                    }}
-                >
-                    Shuffle:
-                </span>
+                <span className={styles['span-heading']}>Shuffle:</span>
                 <button className={styles['button-randomizer']}>
-                    <i
-                        className="material-icons-outlined"
-                        style={{ fontSize: '2rem', verticalAlign: 'middle' }}
-                    >
-                        menu
-                    </i>
+                    <i className="material-icons-outlined">menu</i>
                     &nbsp; &nbsp; Randomizer
-                    <i
-                        className="material-icons-outlined"
-                        style={{ fontSize: '2rem', verticalAlign: 'middle' }}
-                    >
-                        sync
-                    </i>
+                    <i className="material-icons-outlined">sync</i>
                 </button>
                 <br />
 
                 {/* Category heading and buttons */}
-                <span
-                    style={{
-                        fontWeight: 'bold',
-                        display: 'flex',
-                        placeContent: 'center',
-                    }}
-                >
-                    Categories:
-                </span>
-
+                <span className={styles['span-heading']}>Categories:</span>
                 {category_buttons.map((button_name, index) => (
                     <Fragment key={index}>
                         <button className={styles['button-left']}>{button_name}</button>
@@ -69,21 +42,13 @@ export const LeftBlock = ({}) => {
                 <br />
 
                 {/* YouTube heading and button */}
-                <span
-                    style={{
-                        fontWeight: 'bold',
-                        display: 'flex',
-                        placeContent: 'center',
-                    }}
-                >
-                    YouTube:
-                </span>
+                <span className={styles['span-heading']}>YouTube:</span>
                 <button className={styles['button-yt']}> YouTube Search</button>
             </div>
 
             {/* Volume heading and buttons */}
             <div className={styles.volume_block}>
-                <span style={{ fontWeight: 'bold' }}>Volume:</span>
+                <span className={styles['span-heading']}>Volume:</span>
             </div>
         </div>
     );
