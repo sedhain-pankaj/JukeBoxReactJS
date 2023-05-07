@@ -164,8 +164,8 @@
 //slider
 .input-slider {
   position: absolute;
-  top: 60%;
-  bottom: 10%;
+  top: 65%;
+  bottom: 20%;
   left: 25%;
   right: 25%;
 }
@@ -175,10 +175,8 @@ input[type='range'] {
   appearance: none;
   cursor: pointer;
   background-color: #ddd;
-  border: 0.2vw solid #315f53;
+  border: 0.1vw solid #021a14;
   border-radius: 1vw;
-  height: 1.2vw;
-  width: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -191,18 +189,18 @@ input[type='range'] {
 //use same css for both input[type=range]moz kit and input[type=range]::-webkit-slider-thumb
 input[type='range']::-moz-range-thumb {
   background-color: #007bff;
-  border: none;
-  border-radius: 50%;
-  height: 1.2vw;
-  width: 1.2vw;
+  border: 0.1vw solid #021a14;
+  border-radius: 0.2vw;
+  height: 5vh;
+  width: 1vw;
 }
 
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background-color: #007bff;
-  border: none;
-  border-radius: 50%;
-  height: 1.2vw;
-  width: 1.2vw;
+  background-color: #9cccff;
+  border: 0.1vw solid #021a14;
+  border-radius: 0.2vw;
+  height: 5vh;
+  width: 1vw;
 }
