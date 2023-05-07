@@ -26,11 +26,18 @@
   bottom: 0px;
 }
 
+//css for video
+video {
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+  object-fit: fill;
+}
+
 //css for video title.
-//most of its css is in title_container
 .video_title {
   width: 100%;
-  font-size:clamp(0.5vw, 0.9vw, 1.5vw);
+  font-size: clamp(0.5vw, 0.9vw, 1.5vw);
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
@@ -49,7 +56,7 @@
   border: 1px solid #315f53;
   border-radius: 0.5vw;
   background-color: rgba(206, 203, 203, 0.8);
-  font-size:clamp(1vw, 1.2vw, 2vw);
+  font-size: clamp(1vw, 1.2vw, 2vw);
   font-weight: bold;
   display: flex;
   justify-content: center;

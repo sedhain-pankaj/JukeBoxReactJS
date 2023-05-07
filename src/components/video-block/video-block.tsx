@@ -25,20 +25,8 @@ export const VideoBlock = ({}) => {
 
             <div className={styles.video_block}>
                 <video
-                    src="./src/assets/music/Latest Hits/Em Beihold - Numb Little Bug (Official Music Video).mp4"
+                    src="./src/assets/music/Latest Hits/Adele - Easy On Me (Official Lyric Video).mp4"
                     controls
-                    style={{
-                        overflow: 'hidden',
-                        width: '44vw',
-                        height: '16.2vw',
-                        position: 'absolute',
-                        left: '0px',
-                        top: '0px',
-                        bottom: '0px',
-                        right: '0px',
-                        borderRadius: '1vw',
-                        objectFit: 'fill',
-                    }}
                 />
             </div>
         </div>
