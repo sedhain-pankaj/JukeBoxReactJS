@@ -31,7 +31,7 @@
 //most of its css is in title_container
 .video_title {
   width: 100%;
-  font-size: 1rem;
+  font-size:clamp(0.5vw, 0.9vw, 1.5vw);
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
@@ -50,7 +50,7 @@
   border: 1px solid #315f53;
   border-radius: 0.5rem;
   background-color: rgba(206, 203, 203, 0.8);
-  font-size: 1rem;
+  font-size:clamp(1vw, 1.2vw, 2vw);
   font-weight: bold;
   display: flex;
   justify-content: center;

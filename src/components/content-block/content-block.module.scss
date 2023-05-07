@@ -6,6 +6,7 @@
   top: 0px;
   right: 10%;
   bottom: 0px;
+  // font-size:clamp(1vw, 1.5vw, 2vw);
 }
 .arrows_category_block {
   position: absolute;
@@ -19,9 +20,9 @@
 //h3 mostly for prompt message in content block
 h3 {
   font-family: Verdana;
-  font-size: 1.2rem;
   color: #7e0000;
   text-align: center;
+  font-size:clamp(1vw, 1.2vw, 2vw);
 }
 
 // arrows button css - regular, hover and active

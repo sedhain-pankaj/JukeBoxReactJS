@@ -14,7 +14,7 @@
   position: absolute;
   margin: 0.5%;
   border: solid #315f53;
-  border-radius: 1rem; 
+  border-radius: 1rem;
   left: 1%;
   top: 86%;
   right: 1%;
@@ -27,6 +27,7 @@
   display: flex;
   place-content: center;
   color: #033e30;
+  font-size:clamp(1vw, 1vw, 2vw);
 }
 
 // category button's css - regular
@@ -44,7 +45,7 @@
   display: grid;
   grid-auto-flow: column;
   height: 100%;
-  font-size: large;
+  font-size:clamp(1vw, 1vw, 2vw);
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -73,4 +74,126 @@
 .button-yt:active {
   transform: translateX(1px);
   box-shadow: 0px 0px 0px #d3cccc;
+}
+
+//volume button css - regular, hover, active
+.volume-dial {
+  background-color: #4100f4;
+  border: 0.5px solid #315f53;
+  border-radius: 1rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  bottom: 5%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.volume-dial-left {
+  left: 2%;
+  right: 80%;
+}
+.volume-dial-right {
+  left: 80%;
+  right: 2%;
+}
+
+.volume-dial:hover {
+  background-color: #0f9171;
+  box-shadow: 3px 3px 10px #d3cccc;
+  transform: translateX(-1px);
+}
+
+.volume-dial:active {
+  background-color: #0f9171;
+  transform: translateX(1px);
+  box-shadow: 0px 0px 0px #d3cccc;
+}
+
+// mute & unmute button css - regular, hover, active
+.button-mute,
+.button-unmute {
+  background-color: rgb(167, 167, 167);
+  border: 0.5px solid #315f53;
+  color: #052e30;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  left: 60%;
+  bottom: 60%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:clamp(1vw, 1vw, 2vw);
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.button-mute:hover,
+.button-unmute:hover {
+  background-color: #0f9171;
+  color: #fff;
+  box-shadow: 3px 3px 10px #d3cccc;
+  transform: translateX(-1px);
+}
+
+.button-mute:active,
+.button-unmute:active {
+  background-color: #0f9171;
+  transform: translateX(1px);
+  box-shadow: 0px 0px 0px #d3cccc;
+}
+
+//volume header and digit
+.volume-digit {
+  font-weight: bold;
+  font-size:clamp(1vw, 1.1vw, 2vw);
+  color: #033e30;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  right: 45%;
+  bottom: 60%;
+  overflow: hidden;
+}
+
+//slider
+.input-slider {
+  position: absolute;
+  top: 60%;
+  bottom: 15%;
+  left: 25%;
+  right: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #ddd;
+  border: solid #315f53;
+  border-radius: 1rem;
+}
+
+//use same css for both input[type=range]moz kit and input[type=range]::-webkit-slider-thumb
+input[type='range']::-moz-range-thumb {
+  background-color: #007bff;
+  border: none;
+  border-radius: 50%;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50%;
+  height: 1.2rem;
+  width: 1.2rem;
 }

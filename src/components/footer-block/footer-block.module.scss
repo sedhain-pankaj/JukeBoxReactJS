@@ -4,7 +4,7 @@
   color: rgb(0, 77, 49);
   animation: animate 7s infinite linear;
   width: 100%;
-  font-size: 1.1rem;
+  font-size: clamp(1vw, 1.2vw, 2vw);
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
