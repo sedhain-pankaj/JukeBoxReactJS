@@ -51,26 +51,42 @@ export const LeftBlock = ({}) => {
 
             {/* Volume heading and buttons */}
             <div className={styles.volume_block}>
-                <span>Volume:</span>
-                <span className={styles['volume-digit']}>{volume_digit}</span>
+                <span className={styles['volume-digit']}>
+                    Volume:
+                    <span id="volume-digit-num">{volume_digit}</span>
+                </span>
 
                 <button className={styles['button-mute']}>
                     Mute:
                     <i className="material-icons-outlined">volume_up</i>
-                    <i className="material-icons-outlined" style={{ display: 'none' }}>
-                        volume_off
-                    </i>
+                </button>
+
+                <button className={styles['button-unmute']} style={{ display: 'none' }}>
+                    Unmute:
+                    <i className="material-icons-outlined">volume_off</i>
                 </button>
                 <br />
 
-                <button className={styles['volume-dial']}>
-                    <i className="material-icons-outlined">arrow_circle_left</i>
+                <button className={styles['volume-dial'] + ' ' + styles['volume-dial-left']}>
+                    <i className="material-icons-outlined">remove_circle_outline</i>
                 </button>
 
-                <input type="range" min="0" max="100" className={styles['input-slider']} />
+                <input
+                    type="range"
+                    min="0"
+                    max="100"
+                    onChange={(e) => {
+                        volume_digit = parseInt(e.target.value);
+                        document.getElementById('volume-digit-num')!.innerHTML =
+                            volume_digit.toString();
+                    }}
+                    className={styles['input-slider']}
+                />
 
-                <button className={styles['volume-dial']}>
-                    <i className="material-icons-outlined">arrow_circle_right</i>
+                <div id='slider'></div>
+
+                <button className={styles['volume-dial'] + ' ' + styles['volume-dial-right']}>
+                    <i className="material-icons-outlined">add_circle_outline</i>
                 </button>
             </div>
         </div>
