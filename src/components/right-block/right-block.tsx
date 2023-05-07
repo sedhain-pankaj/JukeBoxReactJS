@@ -11,7 +11,8 @@ export const RightBlock = ({}) => {
                 <div className={styles.search_header}>
                     <div className={styles.search_header_text}>
                         Search &nbsp;
-                        <i className="material-icons-outlined" style={{ fontSize: '2.75rem' }}>
+                        <i className="material-icons-outlined" 
+                        style={{ fontSize: 'clamp(1vw, 2.5vw, 3vw)' }}>
                             content_paste_search
                         </i>
                     </div>
@@ -23,7 +24,8 @@ export const RightBlock = ({}) => {
                 <div className={styles.queue_header}>
                     <div className={styles.queue_header_text}>
                         Queue
-                        <i className="material-icons-outlined" style={{ fontSize: '3rem' }}>
+                        <i className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 2.5vw, 3vw)' }}>
                             playlist_play
                         </i>
                     </div>
@@ -32,7 +34,8 @@ export const RightBlock = ({}) => {
                 <div className={styles.clear_queue_button}>
                     <button className={styles.button_right}>
                         Clear Queue &nbsp;
-                        <i className="material-icons-outlined" style={{ fontSize: '2.5rem' }}>
+                        <i className="material-icons-outlined" 
+                        style={{ fontSize: 'clamp(1vw, 2.5vw, 3vw)' }}>
                             delete_sweep
                         </i>
                     </button>
@@ -44,8 +47,8 @@ export const RightBlock = ({}) => {
                     <button className={styles.arrow_up_queue}>
                         <i
                             className="material-icons-outlined"
-                            style={{ fontSize: '3rem', position: 'absolute' }}
-                        >
+                            style={{ fontSize: 'clamp(1vw, 2.5vw, 3vw)', position: 'absolute' }}
+                            >
                             arrow_circle_up
                         </i>
                     </button>
@@ -53,8 +56,8 @@ export const RightBlock = ({}) => {
                     <button className={styles.arrow_down_queue}>
                         <i
                             className="material-icons-outlined"
-                            style={{ fontSize: '3rem', position: 'absolute' }}
-                        >
+                            style={{ fontSize: 'clamp(1vw, 2.5vw, 3vw)', position: 'absolute' }}
+                            >
                             arrow_circle_down
                         </i>
                     </button>

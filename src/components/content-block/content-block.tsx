@@ -19,7 +19,7 @@ export const ContentBlock = ({}) => {
                 <button className={styles.arrow_up_category}>
                     <i
                         className="material-icons-outlined"
-                        style={{ fontSize: '3rem', position: 'absolute' }}
+                        style={{ fontSize: 'clamp(1vw, 2.5vw, 3vw)', position: 'absolute' }}
                     >
                         arrow_circle_up
                     </i>
@@ -28,7 +28,7 @@ export const ContentBlock = ({}) => {
                 <button className={styles.arrow_down_category}>
                     <i
                         className="material-icons-outlined"
-                        style={{ fontSize: '3rem', position: 'absolute' }}
+                        style={{ fontSize: 'clamp(1vw, 2.5vw, 3vw)', position: 'absolute' }}
                     >
                         arrow_circle_down
                     </i>

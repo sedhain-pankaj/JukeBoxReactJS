@@ -28,10 +28,20 @@ export const LeftBlock = ({}) => {
             <div className={styles.category_button}>
                 {/* Shuffle heading and button */}
                 <span className={styles['span-heading']}>Shuffle:</span>
-                <button className={styles['button-randomizer']} style={{ marginBottom: '0.5rem' }}>
-                    <i className="material-icons-outlined">menu</i>
-                    &nbsp; &nbsp; Randomizer
-                    <i className="material-icons-outlined">sync</i>
+                <button className={styles['button-randomizer']} style={{ marginBottom: '0.5vw' }}>
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)', marginRight: '1.5vw' }}
+                    >
+                        menu
+                    </i>
+                    Randomizer
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)', marginLeft: '0.2vw' }}
+                    >
+                        sync
+                    </i>
                 </button>
 
                 {/* Category heading and buttons */}
@@ -43,10 +53,18 @@ export const LeftBlock = ({}) => {
                 ))}
 
                 {/* YouTube heading and button */}
-                <span className={styles['span-heading']} style={{ marginTop: '0.5rem' }}>
+                <span className={styles['span-heading']} style={{ marginTop: '0.5vw' }}>
                     YouTube:
                 </span>
-                <button className={styles['button-yt']}> YouTube Search</button>
+                <button className={styles['button-yt']}>
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)' }}
+                    >
+                        smart_display
+                    </i>
+                    &nbsp; YouTube Search
+                </button>
             </div>
 
             {/* Volume heading and buttons */}
@@ -58,35 +76,54 @@ export const LeftBlock = ({}) => {
 
                 <button className={styles['button-mute']}>
                     Mute:
-                    <i className="material-icons-outlined">volume_up</i>
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)' }}
+                    >
+                        volume_up
+                    </i>
                 </button>
 
                 <button className={styles['button-unmute']} style={{ display: 'none' }}>
                     Unmute:
-                    <i className="material-icons-outlined">volume_off</i>
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)' }}
+                    >
+                        volume_off
+                    </i>
                 </button>
                 <br />
 
                 <button className={styles['volume-dial'] + ' ' + styles['volume-dial-left']}>
-                    <i className="material-icons-outlined">remove_circle_outline</i>
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)', position: 'absolute' }}
+                    >
+                        remove_circle_outline
+                    </i>
                 </button>
 
-                <input
-                    type="range"
-                    min="0"
-                    max="100"
-                    onChange={(e) => {
-                        volume_digit = parseInt(e.target.value);
-                        document.getElementById('volume-digit-num')!.innerHTML =
-                            volume_digit.toString();
-                    }}
-                    className={styles['input-slider']}
-                />
-
-                <div id='slider'></div>
+                <div className={styles['input-slider']}>
+                    <input
+                        type="range"
+                        min="0"
+                        max="100"
+                        onChange={(e) => {
+                            volume_digit = parseInt(e.target.value);
+                            document.getElementById('volume-digit-num')!.innerHTML =
+                                volume_digit.toString();
+                        }}
+                    />
+                </div>
 
                 <button className={styles['volume-dial'] + ' ' + styles['volume-dial-right']}>
-                    <i className="material-icons-outlined">add_circle_outline</i>
+                    <i
+                        className="material-icons-outlined"
+                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)', position: 'absolute' }}
+                    >
+                        add_circle_outline
+                    </i>
                 </button>
             </div>
         </div>

@@ -12,8 +12,8 @@
 .videoblock {
   position: absolute;
   margin-top: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
+  border: 0.2vw solid #0f9171;
+  border-radius: 0.5vw;
   top: 0px;
   left: 20%;
   bottom: 60%;
@@ -23,8 +23,8 @@
 .contentblock {
   position: absolute;
   margin-top: 0.5%;
-  border-style: solid;
-  border-color: #0f9171;
+  border: 0.2vw solid #0f9171;
+  border-radius: 0.5vw;
   overflow-y: auto;
   overflow-x: hidden;
   top: 40%;
