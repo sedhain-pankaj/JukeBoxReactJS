@@ -31,16 +31,24 @@ export const LeftBlock = ({}) => {
                 <button className={styles['button-randomizer']} style={{ marginBottom: '0.5vw' }}>
                     <i
                         className="material-icons-outlined"
-                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)', marginRight: '1.5vw' }}
+                        style={{
+                            fontSize: 'clamp(1vw, 2vw, 3vw)',
+                            marginRight: '1vw',
+                            color: '#004230',
+                        }}
                     >
                         menu
                     </i>
                     Randomizer
                     <i
                         className="material-icons-outlined"
-                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)', marginLeft: '0.2vw' }}
+                        style={{
+                            fontSize: 'clamp(1vw, 2.5vw, 3vw)',
+                            marginLeft: '0.4vw',
+                            color: '#4100f4',
+                        }}
                     >
-                        sync
+                        change_circle
                     </i>
                 </button>
 
@@ -59,11 +67,16 @@ export const LeftBlock = ({}) => {
                 <button className={styles['button-yt']}>
                     <i
                         className="material-icons-outlined"
-                        style={{ fontSize: 'clamp(1vw, 1.8vw, 2vw)' }}
+                        // font-size:clamp(1vw, 2.5vw, 3vw); margin-right:1vw; color:brown;
+                        style={{
+                            fontSize: 'clamp(1vw, 2.5vw, 3vw)',
+                            marginRight: '1vw',
+                            color: 'brown',
+                        }}
                     >
                         smart_display
                     </i>
-                    &nbsp; YouTube Search
+                    YouTube Search
                 </button>
             </div>
 
