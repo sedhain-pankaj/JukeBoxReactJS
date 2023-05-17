@@ -30,7 +30,7 @@
 video {
   width: 100%;
   height: 100%;
-  border-radius: 1vw;
+  // border-radius: 1vw;
   object-fit: fill;
 }
 
@@ -48,12 +48,13 @@ video {
 //css for skip button - regular, hover & active
 .skip_button {
   position: absolute;
+  width: 100%;
   left: 0px;
   top: 0px;
   right: 0px;
   bottom: 0px;
   cursor: pointer;
-  border: 1px solid #315f53;
+  border: 0.1vw solid #315f53;
   border-radius: 0.5vw;
   background-color: rgba(206, 203, 203, 0.8);
   font-size: clamp(1vw, 1.2vw, 2vw);

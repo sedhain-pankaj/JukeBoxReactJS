@@ -16,7 +16,7 @@ export const VideoBlock = ({}) => {
                     Skip
                     <i
                         className="material-icons-outlined"
-                        style={{ fontSize: 'clamp(1vw, 2vw, 3vw)' }}
+                        style={{  fontSize: 'clamp(1vw, 1.5vw, 2vw)', color: 'blueviolet' }}
                     >
                         skip_next
                     </i>
