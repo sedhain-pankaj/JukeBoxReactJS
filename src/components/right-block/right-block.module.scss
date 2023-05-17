@@ -28,8 +28,7 @@
 }
 .search_bar {
   position: absolute;
-  border-style: solid;
-  border-color: #015433;
+  border: 0.25vw solid #315f53;
   border-radius: 1vw;
   bottom: 0px;
   left: 0px;
@@ -62,8 +61,7 @@
 .queue_list {
   position: absolute;
   margin: 0.5%;
-  border-style: solid;
-  border-color: #015433;
+  border: 0.25vw solid #315f53;
   border-radius: 1vw;
   left: 0px;
   top: 8%;
@@ -81,6 +79,7 @@
 
 // clear queue button css: regular, hover & active
 .button_right {
+  width: 100%;
   cursor: pointer;
   font-size:clamp(1vw, 1.5vw, 2vw);
   font-weight: bold;
@@ -133,6 +132,7 @@
 // arrows button css - regular, hover and active
 .arrow_up_queue,
 .arrow_down_queue {
+  width: 100%;
   background-color: #4100f4;
   border: 0.1vw solid #315f53;
   border-radius: 1vw;
