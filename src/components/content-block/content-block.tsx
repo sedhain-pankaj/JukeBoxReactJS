@@ -7,11 +7,11 @@ import styles from './content-block.module.scss';
 export const ContentBlock = ({}) => {
     return (
         <div>
-            <div className={styles.category_block}>
+            <div className={styles.category_content}>
                 <h3>
-                    Click on the categories on the left side. OR <br />
-                    Search songs from top-right corner. AND <br /> <br />
-                    Click on song's THUMBNAIL to queue it.
+                    Click on the categories on the left side <br />
+                    OR <br />
+                    Search songs from top-right corner.
                 </h3>
             </div>
 

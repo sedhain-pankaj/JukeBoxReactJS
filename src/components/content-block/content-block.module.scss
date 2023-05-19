@@ -1,16 +1,19 @@
 //content block is split into 2 sections - content & arrows
-.category_block {
+.category_content {
   position: absolute;
   margin: 0.5%;
   left: 0px;
   top: 0px;
   right: 10%;
   bottom: 0px;
-  // font-size:clamp(1vw, 1.5vw, 2vw);
+  border: 0.25vw solid #0f9171;
+  border-radius: 0.5vw;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .arrows_category_block {
   position: absolute;
-  margin: 0.5%; 
+  margin: 0.5%;
   bottom: 0px;
   left: 90%;
   top: 0px;
@@ -22,7 +25,9 @@ h3 {
   font-family: Verdana;
   color: #7e0000;
   text-align: center;
-  font-size:clamp(1vw, 1.2vw, 2vw);
+  font-size: clamp(1vw, 1.2vw, 2vw);
+  margin: 1.5vh 0px 0px 0px;
+  padding: 0px;
 }
 
 // arrows button css - regular, hover and active
