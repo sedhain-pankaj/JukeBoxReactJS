@@ -17,7 +17,8 @@ function createJSON(folderName) {
         };
     });
     console.log(songJson);
-    fs.writeFileSync(folderName + '/' + folderName + '.json', JSON.stringify(songJson));
+    if (!fs.existsSync('database')) fs.mkdirSync('database');
+    fs.writeFileSync('database/' + folderName + '.json', JSON.stringify(songJson));
 }
 
 createJSON('Fifty Sixty');
