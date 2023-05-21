@@ -1,5 +1,17 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect } from 'react';
 import styles from './left-block.module.scss';
+
+// database
+import FiftySixty_database from '../../../public/music/database/Fifty Sixty.json';
+import Seventy_database from '../../../public/music/database/Seventy.json';
+import Eighty_database from '../../../public/music/database/Eighty.json';
+import Ninety_database from '../../../public/music/database/Ninety.json';
+import TwoThousand_database from '../../../public/music/database/2000.json';
+import LatestHits_database from '../../../public/music/database/Latest Hits.json';
+import Country_database from '../../../public/music/database/Country.json';
+import Karaoke_database from '../../../public/music/database/Karaoke.json';
+import SpecialOccasion_database from '../../../public/music/database/Special Occasion.json';
+import ChristmasSong_database from '../../../public/music/database/Christmas Song.json';
 
 /**
  * This component was created using Codux's Default new component template.
@@ -18,6 +30,37 @@ const category_buttons: string[] = [
     'Special Occasion',
     'Christmas Song',
 ];
+
+// create a database array mapping to the category buttons
+
+//     SN: number;
+//     fullname: string;
+//     shortname: string;
+//     path: string;
+//     img: string;
+
+// this is structure of each items inside the json file
+
+  
+  const category_database: any[] = [
+    FiftySixty_database,
+    Seventy_database,
+    Eighty_database,
+    Ninety_database,
+    TwoThousand_database,
+    LatestHits_database,
+    Country_database,
+    Karaoke_database,
+    SpecialOccasion_database,
+    ChristmasSong_database,
+];
+
+// can you merge the two arrays together such that [string, JSON]?
+const category_database_map: Map<string, JSON> = new Map();
+for (let i = 0; i < category_buttons.length; i++) {
+    category_database_map.set(category_buttons[i], category_database[i]);
+}
+
 
 // let volume_digit: number = 50;
 let volume_digit: number = 50;
@@ -56,7 +99,19 @@ export const LeftBlock = ({}) => {
                 <span className={styles['span-heading']}>Categories:</span>
                 {category_buttons.map((button_name, index) => (
                     <Fragment key={index}>
-                        <button className={styles['button-left']}>{button_name}</button>
+                        <button className={styles['button-left']} onClick={() => {
+                             alert(category_database_map.get(button_name));
+                            //  attach the database to the <div className={styles.category_content}>
+                            
+                            // useEffect(() => {
+                            //     document.getElementById('category_content')!.innerHTML = category_database_map.get(button_name)?.stringify();
+                            // }
+                            
+                        
+
+                        }}>
+                            {button_name}
+                        </button>
                     </Fragment>
                 ))}
 
