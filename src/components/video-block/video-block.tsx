@@ -1,4 +1,6 @@
 import styles from './video-block.module.scss';
+import LatestHits_database from '../../../public/music/database/Latest Hits.json';
+import 'video.js';
 
 /**
  * This component was created using Codux's Default new component template.
@@ -16,7 +18,7 @@ export const VideoBlock = ({}) => {
                     Skip
                     <i
                         className="material-icons-outlined"
-                        style={{  fontSize: 'clamp(1vw, 1.5vw, 2vw)', color: 'blueviolet' }}
+                        style={{ fontSize: 'clamp(1vw, 1.5vw, 2vw)', color: 'blueviolet' }}
                     >
                         skip_next
                     </i>
@@ -24,10 +26,7 @@ export const VideoBlock = ({}) => {
             </div>
 
             <div className={styles.video_block}>
-                <video
-                    src="./src/assets/music/Latest Hits/Adele - Easy On Me (Official Lyric Video).mp4"
-                    controls
-                />
+                <video src={LatestHits_database[0].path} controls preload="auto" autoPlay />
             </div>
         </div>
     );
