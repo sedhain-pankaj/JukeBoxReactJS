@@ -1,71 +1,66 @@
-//content block is split into 2 sections - content & arrows
+$primary-color: #0f9171;
+$secondary-color: #4100f4;
+$tertiary-color: #315f53;
+$quaternary-color: #7e0000;
+$shadow-color: #d3cccc;
+
 .category_content {
   position: absolute;
   margin: 0.5%;
-  left: 0px;
-  top: 0px;
-  right: 10%;
-  bottom: 0px;
-  border: 0.25vw solid #0f9171;
+  inset: 0 10% 0 0;
+  border: 0.25vw solid $primary-color;
   border-radius: 0.5vw;
   overflow-y: auto;
   overflow-x: hidden;
 }
+
 .arrows_category_block {
   position: absolute;
   margin: 0.5%;
-  bottom: 0px;
-  left: 90%;
-  top: 0px;
-  right: 0px;
+  inset: 0 0 0 90%;
 }
 
-//h3 mostly for prompt message in content block
 h3 {
   font-family: Verdana;
-  color: #7e0000;
+  color: $quaternary-color;
   text-align: center;
   font-size: clamp(1vw, 1.2vw, 2vw);
-  margin: 1.5vh 0px 0px 0px;
-  padding: 0px;
+  margin: 1.5vh 0 0 0;
+  padding: 0;
 }
 
-// arrows button css - regular, hover and active
 .arrow_up_category,
 .arrow_down_category {
   width: 100%;
-  background-color: #4100f4;
-  border: 0.1vw solid #315f53;
+  background-color: $secondary-color;
+  border: 0.1vw solid $tertiary-color;
   border-radius: 1vw;
-  padding: 0px;
+  padding: 0;
   color: white;
   position: absolute;
-  left: 0px;
-  right: 0px;
+  inset: 0;
   cursor: pointer;
   display: grid;
   place-items: center;
   overflow: hidden;
+
+  &:hover {
+    background-color: $primary-color;
+    box-shadow: 3px 3px 10px $shadow-color;
+    transform: translateX(-1px);
+  }
+
+  &:active {
+    background-color: $primary-color;
+    transform: translateX(1px);
+    box-shadow: 0 0 0 $shadow-color;
+  }
 }
+
 .arrow_up_category {
-  top: 0px;
-  bottom: 85%;
+  inset: 0 0 85% 0;
 }
+
 .arrow_down_category {
-  top: 85%;
-  bottom: 0px;
-}
-
-.arrow_up_category:hover,
-.arrow_down_category:hover {
-  background-color: #0f9171;
-  box-shadow: 3px 3px 10px #d3cccc;
-  transform: translateX(-1px);
-}
-
-.arrow_up_category:active,
-.arrow_down_category:active {
-  background-color: #0f9171;
-  transform: translateX(1px);
-  box-shadow: 0px 0px 0px #d3cccc;
+  inset: 85% 0 0 0;
 }

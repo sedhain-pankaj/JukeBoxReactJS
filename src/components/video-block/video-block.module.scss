@@ -1,29 +1,25 @@
+$border-color: #315f53;
+$border-radius: 0.5vw;
+$hover-bg-color: #0f9171;
+$hover-shadow: 3px 3px 10px #d3cccc;
+
 //video block has 3 sections - title, skip-button & video
 .title_container {
   position: absolute;
   margin: 0.5%;
-  left: 0px;
-  top: 0px;
-  right: 15%;
-  bottom: 87%;
+  inset: 0 15% 87% 0;
   display: grid;
   place-items: center;
 }
 .skip_button_container {
   position: absolute;
   margin: 0.5%;
-  left: 85%;
-  top: 0px;
-  right: 0px;
-  bottom: 87%;
+  inset: 0 0 87% 85%;
 }
 .video_block {
   position: absolute;
   margin: 1.5% 2%;
-  left: 0px;
-  top: 12%;
-  right: 0px;
-  bottom: 0px;
+  inset: 12% 0 0 0;
 }
 
 //css for video
@@ -48,10 +44,7 @@ video {
 .skip_button {
   position: absolute;
   width: 100%;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
+  inset: 0;
   cursor: pointer;
   border: 0.1vw solid #315f53;
   border-radius: 0.5vw;
@@ -62,15 +55,18 @@ video {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: #fff;
+    box-shadow: $hover-shadow;
+    transform: translateX(-1px);
+    font-weight: bolder;
+  }
+
+  &:active {
+    transform: translateX(1px);
+    box-shadow: 0px 0px 0px $hover-shadow;
+  }
 }
-.skip_button:hover {
-  background-color: #0f9171;
-  color: #fff;
-  box-shadow: 3px 3px 10px #d3cccc;
-  transform: translateX(-1px);
-  font-weight: bolder;
-}
-.skip_button:active {
-  transform: translateX(1px);
-  box-shadow: 0px 0px 0px #d3cccc;
-}
+

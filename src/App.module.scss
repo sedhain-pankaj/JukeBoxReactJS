@@ -1,51 +1,43 @@
 // whole app is split into 3 sections - left, middle & right
 // middle is split into 3 sections - video, content & footer
+
+$margin: 0.5%;
+$position: absolute;
+$border-color: #0f9171;
+$border-width: 0.25vw;
+$border-radius: 0.5vw;
+
+.leftblock,
+.videoblock,
+.contentblock,
+.rightblock,
+.footerblock {
+  position: $position;
+  margin: $margin;
+}
+
 .leftblock {
-  position: absolute;
-  margin: 0.5%;
-  bottom: 0px;
-  left: 0px;
-  top: 0px;
-  right: 80%;
+  inset: 0 80% 0 0;
 }
 
 .videoblock {
-  position: absolute;
-  margin-top: 0.5%;
-  border: 0.25vw solid #0f9171;
-  border-radius: 0.5vw;
-  top: 0px;
-  left: 20%;
-  bottom: 60%;
-  right: 35%;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  inset: 0 35% 60% 20%;
 }
 
 .contentblock {
-  position: absolute;
-  margin-top: 0.5%;
-  top: 40%;
-  left: 20%;
-  right: 35%;
-  bottom: 5%;
+  margin-top: $margin;
+  inset: 40% 35% 5% 20%;
 }
 
 .rightblock {
-  position: absolute;
-  margin: 0.5%;
-  bottom: 0px;
-  right: 0px;
-  top: 0px;
-  left: 65%;
+  inset: 0 0 0 65%;
 }
 
 .footerblock {
-  position: absolute;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
-  top: 95%;
-  left: 20%;
-  right: 35%;
-  bottom: 0px;
+  margin: $margin 0;
+  inset: 95% 35% 0 20%;
   display: grid;
   place-items: center;
 }

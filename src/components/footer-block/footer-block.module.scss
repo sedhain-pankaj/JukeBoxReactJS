@@ -1,11 +1,13 @@
+$primary-color: rgb(0, 77, 49);
+$font-size: clamp(1vw, 1.2vw, 2vw);
+
 .footer_text {
   text-align: center;
   font-weight: bold;
-  color: rgb(0, 77, 49);
+  color: $primary-color;
   animation: animate 7s infinite linear;
   width: 100%;
-  font-size: clamp(1vw, 1.2vw, 2vw);
-  font-weight: bold;
+  font-size: $font-size;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
