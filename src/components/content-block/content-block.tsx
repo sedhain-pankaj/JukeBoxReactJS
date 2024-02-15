@@ -13,6 +13,10 @@ export const ContentBlock = ({}) => {
                     OR <br />
                     Search songs from top-right corner.
                 </h3>
+
+                <div className={styles.category_content_list}>
+                    
+                </div>
             </div>
 
             <div className={styles.arrows_category_block}>

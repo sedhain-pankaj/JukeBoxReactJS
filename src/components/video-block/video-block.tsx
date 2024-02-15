@@ -1,6 +1,5 @@
 import styles from './video-block.module.scss';
 import LatestHits_database from '../../../public/music/database/Latest Hits.json';
-import 'video.js';
 
 /**
  * This component was created using Codux's Default new component template.

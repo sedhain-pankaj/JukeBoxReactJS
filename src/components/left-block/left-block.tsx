@@ -1,5 +1,6 @@
 import { Fragment, useEffect } from 'react';
 import styles from './left-block.module.scss';
+import { ContentBlock } from '../content-block/content-block';
 
 // database
 import FiftySixty_database from '../../../public/music/database/Fifty Sixty.json';
@@ -40,9 +41,9 @@ const category_buttons: string[] = [
 //     img: string;
 
 // this is structure of each items inside the json file
+// what should the type of the database be?
 
-  
-  const category_database: any[] = [
+const category_database: any = [
     FiftySixty_database,
     Seventy_database,
     Eighty_database,
@@ -60,7 +61,6 @@ const category_database_map: Map<string, JSON> = new Map();
 for (let i = 0; i < category_buttons.length; i++) {
     category_database_map.set(category_buttons[i], category_database[i]);
 }
-
 
 // let volume_digit: number = 50;
 let volume_digit: number = 50;
@@ -99,17 +99,28 @@ export const LeftBlock = ({}) => {
                 <span className={styles['span-heading']}>Categories:</span>
                 {category_buttons.map((button_name, index) => (
                     <Fragment key={index}>
-                        <button className={styles['button-left']} onClick={() => {
-                             alert(category_database_map.get(button_name));
-                            //  attach the database to the <div className={styles.category_content}>
-                            
-                            // useEffect(() => {
-                            //     document.getElementById('category_content')!.innerHTML = category_database_map.get(button_name)?.stringify();
-                            // }
-                            
-                        
+                        <button
+                            className={styles['button-left']}
+                            onClick={() => {
+                                //console.table((category_database_map.get(button_name)));
+                                //alert(category_database_map.get(button_name)) as a table
+                                //alert(JSON.stringify(category_database_map.get(button_name)));
 
-                        }}>
+                                const category_database_map_json = category_database_map.get(
+                                    button_name
+                                ) as JSON;
+                                console.log(category_database_map_json);
+
+                                const category_database_map_json_string = JSON.stringify(
+                                    category_database_map_json
+                                );
+                                
+
+                                //console.table(category_database_map_json);
+                                // <ContentBlock database={JSON.stringify(FiftySixty_database)} />;
+
+                            }}
+                        >
                             {button_name}
                         </button>
                     </Fragment>
